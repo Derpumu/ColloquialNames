@@ -14,5 +14,13 @@
             allowed_values = { "colour-chip", "colour-circuit", "vanilla" },
             default_value = "colour-chip",
             setting_type = "startup",
+        },
+        {
+            type = "string-setting",
+            name = "colloquial-modules",
+            order = "b",
+            allowed_values = { "colour", "vanilla" },
+            default_value = "vanilla",
+            setting_type = "startup",
         }
     })
