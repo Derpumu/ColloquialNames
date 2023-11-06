@@ -13,3 +13,9 @@ if settings.startup["colloquial-transport-belt"].value == "colour" then
         end
     end
 end
+
+if settings.startup["colloquial-circuits"].value ~= "vanilla" then
+    for _, name in pairs({"electronic-circuit", "advanced-circuit", "processing-unit"}) do
+        data.raw.item[name].localised_name = {"colloquial."..name.."-".. settings.startup["colloquial-circuits"].value}
+    end
+end
