@@ -1,0 +1,9 @@
+{
+    "name": "ColloquialNames",
+    "version": "0.0.1",
+    "title": "Colloquial Names",
+    "author": "DerPumu",
+    "factorio_version": "1.1",
+    "description": "Replaces item and entity names with the ones we actually use when talking about the game.",
+    "dependencies": []
+}
