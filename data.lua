@@ -2,8 +2,6 @@
  iron gear wheels -> Iron Gears or gears
  anything "mk2" just 2
  electric poles "power poles" or just "poles", like "small poles" or "medium power poles".
- all of the science packs just their color and then "science"
- except military and space science.
  Stone bricks are "bricks"
  Raw fish is definitely just fish
  Atomic bombs are nukes
@@ -26,6 +24,8 @@
  LDS, RCU
 ]]--
 
+-- replacement: setting-name -> list of definitions
+-- definition: type -> list of affected names
 local replacements = {
     ["transport-belt"] = {
         ["transport-belt"] = { "transport-belt", "fast-transport-belt", "express-transport-belt" },
@@ -35,6 +35,11 @@ local replacements = {
     },
     circuits = {
         item = { "electronic-circuit", "advanced-circuit", "processing-unit" }
+    },
+    ["military-science"] = { tool = { "military-science-pack" } },
+    ["space-science"] = { tool = { "space-science-pack" } },
+    ["science"] = {
+        tool = { "automation-science-pack", "logistic-science-pack", "chemical-science-pack", "production-science-pack", "utility-science-pack" }
     },
     assemblers = {
         ["assembling-machine"] = { "assembling-machine-1", "assembling-machine-2", "assembling-machine-3" }
