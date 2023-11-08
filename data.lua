@@ -2,8 +2,6 @@
  Burner mining drills are "burner drills" or "burner miner"
  electric mining drills are "miners" or "mining drills" or "electric miner"
 
- electric poles "power poles" or just "poles", like "small poles" or "medium power poles".
-
  LDS, RCU, SMG
 ]]--
 
@@ -29,6 +27,9 @@ local replacements = {
     },
     assemblers = {
         ["assembling-machine"] = { "assembling-machine-1", "assembling-machine-2", "assembling-machine-3" }
+    },
+    miners = {
+        ["mining-drill"] = { "burner-mining-drill", "electric-mining-drill" }
     },
     modules = {
         module = {
