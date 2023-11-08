@@ -4,10 +4,6 @@
 
  electric poles "power poles" or just "poles", like "small poles" or "medium power poles".
 
- Raw fish is definitely just fish
-
- Atomic bombs are nukes
-
  LDS, RCU, SMG
 ]]--
 
@@ -21,8 +17,8 @@ local replacements = {
         ["loader"] = { "loader", "fast-loader", "express-loader" },
     },
     ["underground-pipe"] = { ["pipe-to-ground"] = { "pipe-to-ground" } },
-    wire = { item = {"copper-cable"} },
-    gear = { item = {"iron-gear-wheel"} },
+    wire = { item = { "copper-cable" } },
+    gear = { item = { "iron-gear-wheel" } },
     circuits = {
         item = { "electronic-circuit", "advanced-circuit", "processing-unit" }
     },
@@ -41,7 +37,8 @@ local replacements = {
             "productivity-module", "productivity-module-2", "productivity-module-3",
         }
     },
-    fish = { capsule = {"raw-fish"} },
+    nuke = { ammo = { "atomic-bomb" } },
+    fish = { capsule = { "raw-fish" } },
 }
 
 for setting, definition in pairs(replacements) do
