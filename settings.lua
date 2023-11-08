@@ -17,5 +17,6 @@ end
 data:extend({
     make_setting("transport-belt", {"colour"}),
     make_setting("circuits", {"colour-chip", "colour-circuit"}),
+    make_setting("assemblers", {"colour", "assembler"}),
     make_setting("modules", {"vanilla", "colour"}),
 })

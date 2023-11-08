@@ -1,8 +1,6 @@
 --[[
  iron gear wheels -> Iron Gears or gears
  anything "mk2" just 2
- Assembling machine mk1 Gray Assembler or Basic assembler.
- mk2 and mk3 blue and green respectively.
  electric poles "power poles" or just "poles", like "small poles" or "medium power poles".
  all of the science packs just their color and then "science"
  except military and space science.
@@ -37,6 +35,9 @@ local replacements = {
     },
     circuits = {
         item = { "electronic-circuit", "advanced-circuit", "processing-unit" }
+    },
+    assemblers = {
+        ["assembling-machine"] = { "assembling-machine-1", "assembling-machine-2", "assembling-machine-3" }
     },
     modules = {
         module = {
