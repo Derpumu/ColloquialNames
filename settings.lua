@@ -16,6 +16,8 @@ end
 
 data:extend({
     make_setting("transport-belt", {"colour"}),
+    make_setting("underground-pipe", {"underground"}),
+    make_setting("wire", {"wire"}),
     make_setting("circuits", {"colour-chip", "colour-circuit"}),
     make_setting("military-science", {"vanilla", "grey", "black"}),
     make_setting("space-science", {"vanilla", "white"}),
