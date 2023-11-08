@@ -18,11 +18,11 @@ data:extend({
     make_setting("transport-belt", {"colour"}),
     make_setting("underground-pipe", {"underground"}),
     make_setting("wire", {"wire"}),
-    make_setting("gear", {"gear", "material"}),
+    make_setting("gear", {"material", "gear"}),
     make_setting("circuits", {"colour-chip", "colour-circuit"}),
     make_setting("military-science", {"vanilla", "grey", "black"}),
     make_setting("space-science", {"vanilla", "white"}),
     make_setting("science", {"colour"}),
-    make_setting("assemblers", {"colour", "assembler"}),
+    make_setting("assemblers", {"colour-yellow", "colour-green", "assembler"}),
     make_setting("modules", {"vanilla", "colour"}),
 })

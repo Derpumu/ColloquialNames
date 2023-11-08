@@ -8,12 +8,6 @@
 
  Atomic bombs are nukes
 
- iron gear wheels -> Iron Gears or gears
-
- ammo is "magazines", "piercing mags" and "uranium mags", or colors
- colors for tank shells
- colors for rockets
-
  LDS, RCU, SMG
 ]]--
 
