@@ -25,6 +25,7 @@ data:extend({
     make_setting("science", {"colour"}),
     make_setting("assemblers", {"colour-yellow", "colour-green", "assembler"}),
     make_setting("modules", {"vanilla", "colour"}),
+    make_setting("power-pole", {"power-pole"}),
     make_setting("nuke", {"nuke"}),
     make_setting("fish", {"fish"}),
 })

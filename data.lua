@@ -37,6 +37,9 @@ local replacements = {
             "productivity-module", "productivity-module-2", "productivity-module-3",
         }
     },
+    ["power-pole"] = {
+        ["electric-pole"] = { "small-electric-pole", "medium-electric-pole", "big-electric-pole" }
+    },
     nuke = { ammo = { "atomic-bomb" } },
     fish = { capsule = { "raw-fish" } },
 }
