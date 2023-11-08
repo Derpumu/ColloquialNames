@@ -1,3 +1,33 @@
+--[[
+ iron gear wheels -> Iron Gears or gears
+ anything "mk2" just 2
+ Assembling machine mk1 Gray Assembler or Basic assembler.
+ mk2 and mk3 blue and green respectively.
+ electric poles "power poles" or just "poles", like "small poles" or "medium power poles".
+ all of the science packs just their color and then "science"
+ except military and space science.
+ Stone bricks are "bricks"
+ Raw fish is definitely just fish
+ Atomic bombs are nukes
+ Burner mining drills are "burner drills" or "burner miner"
+ electric mining drills are "miners" or "mining drills" or "electric miner"
+ Personal laser defense is just "personal lasers"
+ Uranium fuel cells are "fuel cells" and empty ones are "empty fuel cells"
+ Rail signals and rail chain signals are signals and chain signals, train stations are stations
+ Shotgun shells are fine, but piercing shotgun shells are piercing shells
+ I call steam turbines turbines
+ WHY are underground pipes called "pipe to ground"?????
+ The pistol and submachine gun(i call it an SMG)
+ ammo is "magazines", "piercing mags" and "uranium mags", or colors
+ colors for tank shells
+ colors for rockets
+ Colors also for logistics chests
+ oil drill instead of pumpjack
+ lube instead of lubricant
+ copper wire instead of copper cable
+ LDS, RCU
+]]--
+
 local replacements = {
     ["transport-belt"] = {
         ["transport-belt"] = { "transport-belt", "fast-transport-belt", "express-transport-belt" },

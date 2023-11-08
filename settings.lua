@@ -1,26 +1,21 @@
-    data:extend({
-        {
-            type = "string-setting",
-            name = "colloquial-transport-belt",
-            order = "a",
-            allowed_values = { "colour", "vanilla" },
-            default_value = "colour",
-            setting_type = "startup",
-        },
-        {
-            type = "string-setting",
-            name = "colloquial-circuits",
-            order = "b",
-            allowed_values = { "colour-chip", "colour-circuit", "vanilla" },
-            default_value = "colour-chip",
-            setting_type = "startup",
-        },
-        {
-            type = "string-setting",
-            name = "colloquial-modules",
-            order = "b",
-            allowed_values = { "colour", "vanilla" },
-            default_value = "vanilla",
-            setting_type = "startup",
-        }
-    })
+local count = 0
+local function make_setting(name, values)
+    count = count + 1
+    if values[1] ~= "vanilla" then
+        table.insert(values, "vanilla")
+    end
+    return  {
+        type = "string-setting",
+        name = "colloquial-" .. name,
+        order = string.format("%02d", count),
+        allowed_values = values,
+        default_value = values[1],
+        setting_type = "startup",
+    }
+end
+
+data:extend({
+    make_setting("transport-belt", {"colour"}),
+    make_setting("circuits", {"colour-chip", "colour-circuit"}),
+    make_setting("modules", {"vanilla", "colour"}),
+})
