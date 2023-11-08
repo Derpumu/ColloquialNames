@@ -13,10 +13,12 @@ local replacements = {
     circuits = {
         item = { "electronic-circuit", "advanced-circuit", "processing-unit" }
     },
-    ["military-science"] = { tool = { "military-science-pack" } },
+    ["military-science"] = {
+        tool = { "military-science-pack" },
+    },
     ["space-science"] = { tool = { "space-science-pack" } },
     ["science"] = {
-        tool = { "automation-science-pack", "logistic-science-pack", "chemical-science-pack", "production-science-pack", "utility-science-pack" }
+        tool = { "automation-science-pack", "logistic-science-pack", "chemical-science-pack", "production-science-pack", "utility-science-pack" },
     },
     abbrev = {
         gun = { "submachine-gun" },
@@ -47,8 +49,12 @@ for setting, definition in pairs(replacements) do
     if setting_value ~= "vanilla" then
         for type, names in pairs(definition) do
             for _, name in pairs(names) do
+                localised_name = { "colloquial." .. name .. "-" .. setting_value }
                 if data.raw[type] and data.raw[type][name] then
-                    data.raw[type][name].localised_name = { "colloquial." .. name .. "-" .. setting_value }
+                    data.raw[type][name].localised_name = localised_name
+                    if type ~= "technology" and data.raw.technology[name] then
+                        data.raw.technology[name].localised_name = localised_name
+                    end
                 end
             end
         end

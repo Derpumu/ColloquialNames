@@ -3,6 +3,7 @@ Version: 0.2.0
 Date: 2023-11-08
   Major Features:
     - Replace the names of many more items and entities
+    - Replace the names of technologies as well
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2023-11-06
