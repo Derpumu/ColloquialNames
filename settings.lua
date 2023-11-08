@@ -23,6 +23,7 @@ data:extend({
     make_setting("military-science", {"vanilla", "grey", "black"}),
     make_setting("space-science", {"vanilla", "white"}),
     make_setting("science", {"colour"}),
+    make_setting("abbrev", {"abbrev"}),
     make_setting("assemblers", {"colour-yellow", "colour-green", "assembler"}),
     make_setting("miners", {"miner"}),
     make_setting("modules", {"vanilla", "colour"}),

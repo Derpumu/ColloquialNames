@@ -1,10 +1,3 @@
---[[
- Burner mining drills are "burner drills" or "burner miner"
- electric mining drills are "miners" or "mining drills" or "electric miner"
-
- LDS, RCU, SMG
-]]--
-
 -- replacement: setting-name -> list of definitions
 -- definition: type -> list of affected names
 local replacements = {
@@ -24,6 +17,10 @@ local replacements = {
     ["space-science"] = { tool = { "space-science-pack" } },
     ["science"] = {
         tool = { "automation-science-pack", "logistic-science-pack", "chemical-science-pack", "production-science-pack", "utility-science-pack" }
+    },
+    abbrev = {
+        gun = { "submachine-gun" },
+        item = { "low-density-structure", "rocket-control-unit" }
     },
     assemblers = {
         ["assembling-machine"] = { "assembling-machine-1", "assembling-machine-2", "assembling-machine-3" }
