@@ -41,6 +41,7 @@ local replacements = {
             "productivity-module", "productivity-module-2", "productivity-module-3",
         }
     },
+    fish = { capsule = {"raw-fish"} },
 }
 
 for setting, definition in pairs(replacements) do
