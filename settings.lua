@@ -15,10 +15,11 @@ local function make_setting(name, values)
 end
 
 data:extend({
-    make_setting("transport-belt", {"colour"}),
+    make_setting("transport-belt", {"colour", "tier"}),
     make_setting("underground-pipe", {"underground"}),
     make_setting("wire", {"wire"}),
     make_setting("gear", {"material", "gear"}),
+    make_setting("steel", {"beam"}),
     make_setting("circuits", {"colour-chip", "colour-circuit"}),
     make_setting("military-science", {"vanilla", "grey", "black"}),
     make_setting("space-science", {"vanilla", "white"}),

@@ -10,6 +10,7 @@ local replacements = {
     ["underground-pipe"] = { ["pipe-to-ground"] = { "pipe-to-ground" } },
     wire = { item = { "copper-cable" } },
     gear = { item = { "iron-gear-wheel" } },
+    steel = { item = { "steel-plate" } },
     circuits = {
         item = { "electronic-circuit", "advanced-circuit", "processing-unit" }
     },

@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2024-08-26
+  Major Features:
+    - Replace the names of steel plates to steel beams
+    - Add option to name belts according to tiers
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2023-11-08
   Major Features:
