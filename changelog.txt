@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2024-11-09
+  Major Features:
+    - Adapt to changes in Factorio 2.0 (R.I.P. rocket control unit)
+    - Add option to add vanilla names in parentheses
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2024-10-27
+  Major Features:
+    - Update metadata for Factorio 2.0
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2024-08-26
   Major Features:

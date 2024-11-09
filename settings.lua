@@ -15,6 +15,14 @@ local function make_setting(name, values)
 end
 
 data:extend({
+    {
+        type = "bool-setting",
+        name = "colloquial-add-vanilla",
+        order = "--a",
+        setting_type = "startup",
+        default_value = false,
+    },
+
     make_setting("transport-belt", {"colour", "tier"}),
     make_setting("underground-pipe", {"underground"}),
     make_setting("wire", {"wire"}),
