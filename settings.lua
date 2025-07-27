@@ -32,6 +32,7 @@ data:extend({
     make_setting("military-science", {"vanilla", "grey", "black"}),
     make_setting("space-science", {"vanilla", "white"}),
     make_setting("science", {"colour"}),
+    make_setting("space-age-science", {"planet"}),
     make_setting("abbrev", {"abbrev"}),
     make_setting("assemblers", {"colour-yellow", "colour-green", "assembler"}),
     make_setting("miners", {"miner"}),
@@ -40,3 +41,7 @@ data:extend({
     make_setting("nuke", {"nuke"}),
     make_setting("fish", {"fish"}),
 })
+
+if not mods["space-age"] then
+    data.raw["string-setting"]["colloquial-space-age-science"].hidden = true
+end
