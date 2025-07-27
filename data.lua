@@ -45,6 +45,7 @@ local replacements = {
             "speed-module", "speed-module-2", "speed-module-3",
             "efficiency-module", "efficiency-module-2", "efficiency-module-3",
             "productivity-module", "productivity-module-2", "productivity-module-3",
+            "quality-module", "quality-module-2", "quality-module-3",
         }
     },
     ["power-pole"] = {
@@ -63,11 +64,9 @@ local append_vanilla = settings.startup["colloquial-add-vanilla"].value
 
 for setting, definition in pairs(replacements) do
     local setting_value = settings.startup["colloquial-" .. setting].value
-    log(setting .. ": " .. setting_value)
     if setting_value ~= "vanilla" then
         for type, names in pairs(definition) do
             for _, name in pairs(names) do
-                log("    " .. type .. " -> " .. name)
                 if data.raw[type] and data.raw[type][name] then
                     prototype = data.raw[type][name]
                     localised_name = { "colloquial." .. name .. "-" .. setting_value }
@@ -79,9 +78,6 @@ for setting, definition in pairs(replacements) do
                     if type ~= "technology" and data.raw.technology[name] then
                         data.raw.technology[name].localised_name = localised_name
                     end
-                    log("        found: " .. localised_name[1])
-                else
-                    log("        not found!")
                 end
             end
         end
